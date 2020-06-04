@@ -14,7 +14,8 @@ const HomePage = () => (
       provides clients with information to properly grow business and mitigate
       losses.
     </h3>
-    <ul>
+
+    <ul className="homepage-content">
       <li>
         Your risk program is not at 100% maximum value. The appropriate parties
         are overextended and do not have the resources to properly assess and

@@ -1,8 +1,9 @@
-.title {
+.services-title {
   display: flex;
   padding-top: 300px;
+  
 }
-.sub-title,
+.services-sub-title,
 h3 {
   display: flex;
   flex-wrap: wrap;
@@ -10,6 +11,7 @@ h3 {
   align-items: center;
 }
 
-ul {
+.services-content {
   list-style-type: square;
+  color: white
 }

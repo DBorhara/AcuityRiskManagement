@@ -1,29 +1,39 @@
-h2,
-h3 {
+#about-titles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+#about-title {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
-.content {
+#about-sub-title{
+
+}
+
+.about-content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
+// h2,
+// h3 {
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   align-items: center;
+//   color: white;
+// }
 
 strong {
   padding-bottom: 15px;
-}
-
-h1 {
-  position: relative;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
 }

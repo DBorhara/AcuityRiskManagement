@@ -45,12 +45,14 @@ class ContactPage extends Component {
           <input name="industry" type="text" onChange={this.handleChange} />
           Message:
           <textarea name="message" onChange={this.handleChange} />
-          <input
+          <button
             className="button"
             name="submit"
-            type="button"
+            type="submit"
             onSubmit={this.handleSubmit}
-          />
+          >
+            Submit
+          </button>
         </form>
       </div>
     );

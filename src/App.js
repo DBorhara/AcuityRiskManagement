@@ -4,6 +4,7 @@ import './App.css';
 
 //Components
 import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
 
 //Pages
 import Homepage from './pages/homepage/homepage.component';
@@ -14,14 +15,17 @@ import ContactPage from './pages/contact/contact.component';
 class App extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/services" component={ServicesPage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/contact" component={ContactPage} />
-        </Switch>
+      <div className="page-container">
+        <div className="content-wrap">
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/services" component={ServicesPage} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/contact" component={ContactPage} />
+          </Switch>
+        </div>
+        <Footer />
       </div>
     );
   }

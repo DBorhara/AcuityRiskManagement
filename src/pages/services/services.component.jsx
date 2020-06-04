@@ -2,10 +2,10 @@ import React from 'react';
 import './services.styles.scss';
 
 const ServicesPage = () => (
-  <div className="titles">
+  <div className="services-titles">
     <h1>Services</h1>
-    <h2 className="sub-title">What Do We Offer?</h2>
-    <div className="content">
+    <h2 className="services-sub-title">What Do We Offer?</h2>
+    <div className="services-content">
       <h3>Simple to Complex Risk Analysis</h3>
       <ul>
         <li>
