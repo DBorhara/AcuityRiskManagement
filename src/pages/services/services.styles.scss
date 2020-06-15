@@ -1,10 +1,21 @@
-.services-title {
+#services-titles {
   display: flex;
-  padding-top: 300px;
-  
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: black;
 }
-.services-sub-title,
-h3 {
+
+#services-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.services-sub-title {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -12,6 +23,9 @@ h3 {
 }
 
 .services-content {
-  list-style-type: square;
-  color: white
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }

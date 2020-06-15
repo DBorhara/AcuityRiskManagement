@@ -9,7 +9,9 @@ const AboutPage = () => (
     <div id="about-title">
       <h2>The Acquity Mission</h2>
     </div>
-    <h3 id="about-sub-title">A Modern Consulting Company</h3>
+    <div id="about-sub-title">
+      <h3>A Modern Consulting Company</h3>
+    </div>
     <div className="about-content">
       <p>
         Acquity provides a lens of understanding and customization to your
