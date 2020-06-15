@@ -1,7 +1,8 @@
 import React from 'react';
-import './heroimage.styles.scss';
-import heroimage from '../../assets/img/heroimage.jpg';
 import { Redirect } from 'react-router-dom';
+import './heroimage.styles.scss';
+
+import heroimage from '../../assets/img/heroimage.jpg';
 
 const Hero = () => (
   <div className="container">

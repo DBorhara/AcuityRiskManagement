@@ -11,6 +11,7 @@ import Homepage from './pages/homepage/homepage.component';
 import ServicesPage from './pages/services/services.component';
 import AboutPage from './pages/about/about.component';
 import ContactPage from './pages/contact/contact.component';
+import DisclaimerPage from './pages/disclaimer/disclaimer.component';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/services" component={ServicesPage} />
             <Route path="/about" component={AboutPage} />
             <Route path="/contact" component={ContactPage} />
+            <Route path="/disclaimer" component={DisclaimerPage} />
           </Switch>
         </div>
         <Footer />

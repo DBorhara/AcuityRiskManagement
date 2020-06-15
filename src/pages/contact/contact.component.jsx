@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Hero from '../../components/heroimage/heroimage.component';
 import './contact.styles.scss';
+
+import Hero from '../../components/heroimage/heroimage.component';
 
 class ContactPage extends Component {
   constructor(props) {
