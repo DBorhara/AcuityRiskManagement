@@ -1,7 +1,7 @@
 /* The hero image */
 .hero-image {
   width: 100vw;
-  height: fit-content;
+  height: 85vh;;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -15,7 +15,7 @@
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;

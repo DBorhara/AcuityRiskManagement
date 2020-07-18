@@ -3,9 +3,11 @@ import './homepage.styles.scss';
 
 import Hero from '../../components/heroimage/heroimage.component';
 
-
 const HomePage = () => (
   <div>
+    <div id="about-titles">
+      <h1>Acquity Risk Services</h1>
+    </div>
     <Hero />
     <br />
     <br />
