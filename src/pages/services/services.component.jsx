@@ -3,11 +3,11 @@ import './services.styles.scss';
 
 const ServicesPage = () => (
   <div>
-    <div id='services-titles'>
-    <h1>Services</h1>
+    <div id="services-titles">
+      <h1>Services</h1>
     </div>
     <div id="services-title">
-    <h2 >What Do We Offer?</h2>
+      <h2>What Do We Offer?</h2>
     </div>
     <div className="services-content">
       <h3>Simple to Complex Risk Analysis</h3>
