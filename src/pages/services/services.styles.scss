@@ -29,3 +29,13 @@
   align-items: center;
   color: black;
 }
+
+.img-content {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 35%;
+    height: auto;
+  }
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import './services.styles.scss';
 
+import riskabout1 from '../../assets/img/riskabout1.jpg';
+
 const ServicesPage = () => (
   <div>
     <div id="services-titles">
@@ -8,6 +10,9 @@ const ServicesPage = () => (
     </div>
     <div id="services-title">
       <h2>What Do We Offer?</h2>
+    </div>
+    <div className='img-content'>
+      <img alt="About Risk" src={riskabout1} />
     </div>
     <div className="services-content">
       <h3>Simple to Complex Risk Analysis</h3>
