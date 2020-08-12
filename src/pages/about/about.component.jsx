@@ -10,8 +10,8 @@ const AboutPage = () => (
     <div id="about-title">
       <h2>The Acquity Mission</h2>
     </div>
-    <div className='img-content'>
-      <img alt='Mission'src={missionImg} />
+    <div className="img-content">
+      <img alt="Mission" src={missionImg} />
     </div>
     <div id="about-sub-title">
       <h3>A Modern Consulting Company</h3>
@@ -27,44 +27,63 @@ const AboutPage = () => (
         business, a peace of mind through the pursuit of excellence"
       </p>
     </div>
-    <div className="about-title">
-      <h2>Our Story</h2>
-    </div>
-    <div className="about-title">
-      <h2>Our Values</h2>
-    </div>
     <div>
       <div className="about-title">
-        <h3>Innovation</h3>
+        <h2>Who are We?</h2>
       </div>
       <div className="about-content">
         <p>
-          Acquity Risk has a proprietary process to accurately address risk and
-          deficiencies, to transform risk attitude to positive and proactive
-          results
+          A team of industry experts to support your risk management and
+          compliance process providing:
         </p>
-      </div>
-    </div>
-    <div>
-      <div className="about-title">
-        <h3>Discipline and Perseverance</h3>
-      </div>
-      <div className="about-content">
+        <ul>
+          <li>Seamless Integrations</li>
+          <li>Accurate Work</li>
+          <li>Dedicated Resources</li>
+          <li>Unlimited Training and Support</li>
+          <li>Peace of Mind</li>
+        </ul>
         <p>
-          The way we use expert knowledge of processes, timing and accurate data
-          with stakeholder involvement in mind is what sets us apart.
+          Acuity believes in rising by lifting our people, businesses, and
+          community
         </p>
       </div>
-    </div>
-    <div>
       <div className="about-title">
-        <h3>Customization</h3>
+        <h2>Our Values</h2>
       </div>
-      <div className="about-content">
-        <p>
-          Acquity tailors each solution for the business size it is and the
-          industry it's in.
-        </p>
+      <div>
+        <div className="about-title">
+          <h3>Innovation</h3>
+        </div>
+        <div className="about-content">
+          <p>
+            Acquity Risk has a proprietary process to accurately address risk
+            and deficiencies, to transform risk attitude to positive and
+            proactive results
+          </p>
+        </div>
+      </div>
+      <div>
+        <div className="about-title">
+          <h3>Discipline and Perseverance</h3>
+        </div>
+        <div className="about-content">
+          <p>
+            The way we use expert knowledge of processes, timing and accurate
+            data with stakeholder involvement in mind is what sets us apart.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div className="about-title">
+          <h3>Customization</h3>
+        </div>
+        <div className="about-content">
+          <p>
+            Acquity tailors each solution for the business size it is and the
+            industry it's in.
+          </p>
+        </div>
       </div>
     </div>
   </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import './services.styles.scss';
 
 import riskabout1 from '../../assets/img/riskabout1.jpg';
+import process from '../../assets/img/process.png';
+import keytakeaways from '../../assets/img/takeaways.png';
 
 const ServicesPage = () => (
   <div>
@@ -11,7 +13,7 @@ const ServicesPage = () => (
     <div id="services-title">
       <h2>What Do We Offer?</h2>
     </div>
-    <div className='img-content'>
+    <div className="img-content">
       <img alt="About Risk" src={riskabout1} />
     </div>
     <div className="services-content">
@@ -21,7 +23,6 @@ const ServicesPage = () => (
           Review of organization's risk exposure (operation, hazard, strategic,
           financial)
         </li>
-
         <li>
           Insurance summary – review of class codes, accurate rating/premium,
           exclusion review
@@ -35,6 +36,44 @@ const ServicesPage = () => (
         <li>Emergency Response Planning</li>
         <li>Business Continuity Planning</li>
       </ul>
+    </div>
+    <div id="services-title">
+      <h2>How Do We Do It?</h2>
+      <h3>Our Simple Process</h3>
+    </div>
+    <div className="img-content">
+      <img alt="How Do We Manage Risk" src={process} />
+    </div>
+    <div id="services-title">
+      <h2>Why Do You Need Risk Management?</h2>
+    </div>
+    <div className="services-content">
+      <ul>
+        <li>
+          Saving finite resources: time, income, assets, people and property can
+          be saved if fewer claims occur
+        </li>
+        <li>
+          Creating a safe and secure environment for staff, visitors, and
+          customers
+        </li>
+        <li>
+          Reducing legal liability and increasing the stability of your
+          operations
+        </li>
+        <li>Improving customer satisfaction</li>
+        <li>Protecting the environment</li>
+        <li> Defining your insurance needs to save on uncessary premiums</li>
+      </ul>
+    </div>
+    <div id="services-title">
+      <h2>When Should You Acquire Risk Management Services?</h2>
+    </div>
+    <div id="services-title">
+      <h2>Key TakeAways</h2>
+    </div>
+    <div className="img-content">
+      <img alt="Key TakeAways" src={keytakeaways} />
     </div>
   </div>
 );
