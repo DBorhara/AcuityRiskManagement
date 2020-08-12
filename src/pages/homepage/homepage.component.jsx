@@ -23,7 +23,7 @@ const HomePage = () => (
       </h2>
     </div>
 
-    <div className="list-line-content">
+    <div >
       <img alt="Risk 1" src={riskimg1} />
       <div className="text-content">
         <h3>
