@@ -10,8 +10,8 @@ const footer = () => (
       </Link>
     </div>
     <div className="right-container">
-      <p>123 ABC Street</p>
-      <p>Sesame Street, NY, 11111, USA</p>
+      <p>57 Grand Street</p>
+      <p>Massapequa, NY 11758</p>
     </div>
   </div>
 );
