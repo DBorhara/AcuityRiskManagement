@@ -8,12 +8,24 @@ const Hero = () => (
   <div className="container">
     <img className="hero-image" src={heroimage} alt="Hero" />
     <div className="hero-text">
-      <p>Protect your Livelihood</p>
-      <Link to="/services">
-        <button className="button" type="button">
-          Services
-        </button>
-      </Link>
+    <p>Protect your Livelihood</p>
+      <div className="hero-buttons">
+        <Link to="/services">
+          <button className="button" type="button">
+            Services
+          </button>
+        </Link>
+        <Link to="/about">
+          <button className="button" type="button">
+            About
+          </button>
+        </Link>
+        <Link to="/contact">
+          <button className="button" type="button">
+            Contact
+          </button>
+        </Link>
+      </div>
     </div>
   </div>
 );

@@ -1,34 +1,28 @@
 .topnav {
-  // height: 5vh;
-  // width: 100vw;
+  height: 10vh;
+  width: 100vw;
   display: flex;
-  justify-content: flex-end;
-  // margin-bottom: 25px;
-  // padding-bottom: 25px;
   background-color: #0f52ba;
-  // position: sticky;
-  // top: 0;
-  // z-index: 100;
-  overflow: hidden;
+  // overflow: hidden;
 
-  // .options {
-  //   width: 50%;
-  //   height: 100%;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: flex-end;
-  //   // padding-top: 25px;
-  //   padding-right: 0px;
+  .topnav-seperator {
+    flex-grow: 1;
+  }
 
-  // }
+  img {
+    justify-content: flex-start;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
   .topnav-link {
-    float: left;
-    display: block;
+    justify-content: flex-end;
+    display: flex;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 2% 1%;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 100%;
   }
   .topnav-link:hover {
     background-color: white;
@@ -36,6 +30,12 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  
+@media handheld and (max-width: 768px), screen and (max-width: 768px) {
+  //insert styling for navbar to adjust on mobile
+  img {
+    display: none;
+  }
+  .topnav-link {
+    // Hamburger Menu
+  }
 }
