@@ -6,7 +6,9 @@ import logo from '../../assets/img/logo.jpeg';
 const Header = () => (
   <div className="topnav">
     <div className="topnav-img">
-      <img src={logo} alt="logo" />
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
     </div>
     <div className="topnav-seperator"></div>
 

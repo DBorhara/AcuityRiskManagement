@@ -14,7 +14,7 @@ class ContactPage extends Component {
     message: '',
   };
 
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
 
     emailjs
@@ -33,7 +33,7 @@ class ContactPage extends Component {
         }
       );
     this.resetForm();
-  }
+  };
   resetForm() {
     this.setState({
       name: '',
@@ -49,12 +49,15 @@ class ContactPage extends Component {
   render() {
     return (
       <div>
-        <div>
-          <Hero />
+        <div id="about-titles">
+          <h1>Contact Us</h1>
         </div>
+        <Hero />
+        <br />
+        <br />
         <div>
           <h1 className="p-heading2">Get in Touch</h1>
-          <Form onSubmit={this.handleSubmit.bind(this)}>
+          <Form onSubmit={this.handleSubmit}>
             <FormGroup controlId="formBasicEmail">
               <Label>Email</Label>
               <Input
