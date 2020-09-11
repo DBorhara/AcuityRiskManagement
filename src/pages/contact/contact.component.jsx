@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+// import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, Button } from 'react-bootstrap';
 
 import './contact.styles.scss';
 
@@ -56,54 +57,63 @@ class ContactPage extends Component {
         <br />
         <br />
         <div>
-          <h1 className="p-heading2">Get in Touch</h1>
           <Form onSubmit={this.handleSubmit}>
-            <FormGroup controlId="formBasicEmail">
-              <Label>Email</Label>
-              <Input
-                type="email"
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>
+                {' '}
+                <strong>Email</strong>
+              </Form.Label>
+              <Form.Control
                 name="email"
+                type="email"
                 value={this.state.email}
-                className="w-25"
-                onChange={this.handleChange.bind(this, 'email')}
                 placeholder="name@example.com"
+                onChange={this.handleChange.bind(this, 'email')}
               />
-            </FormGroup>
-            <FormGroup controlId="formBasicName">
-              <Label className="text-muted">Name</Label>
-              <Input
-                type="text"
+            </Form.Group>
+            <Form.Group controlId="formBasicName">
+              <Form.Label>
+                {' '}
+                <strong>Name</strong>
+              </Form.Label>
+              <Form.Control
                 name="name"
-                value={this.state.name}
-                className="text-primary"
-                onChange={this.handleChange.bind(this, 'name')}
-                placeholder="Name"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicindustry">
-              <Label className="text-muted">Industry</Label>
-              <Input
                 type="text"
-                name="industry"
-                className="text-primary"
-                value={this.state.industry}
-                onChange={this.handleChange.bind(this, 'industry')}
-                placeholder="Industry"
+                value={this.state.name}
+                placeholder="Name"
+                onChange={this.handleChange.bind(this, 'name')}
               />
-            </FormGroup>
-            <FormGroup controlId="formBasicMessage">
-              <Label className="text-muted">Message</Label>
-              <Input
-                type="textarea"
+            </Form.Group>
+            <Form.Group controlId="formBasicindustry">
+              <Form.Label>
+                <strong>Industry</strong>
+              </Form.Label>
+              <Form.Control
+                name="industry"
+                type="text"
+                value={this.state.industry}
+                placeholder="Industry"
+                onChange={this.handleChange.bind(this, 'industry')}
+              />
+            </Form.Group>
+            <Form.Group controlId="formBasicMessage">
+              <Form.Label>
+                <strong>Message</strong>
+              </Form.Label>
+              <Form.Control
                 name="message"
-                className="text-primary"
+                as="textarea"
+                rows="7"
+                placeholder="Type Message Here"
                 value={this.state.message}
                 onChange={this.handleChange.bind(this, 'message')}
               />
-            </FormGroup>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            </Form.Group>
+            <Form.Group>
+              <Button className="my-1" type="submit">
+                Submit
+              </Button>
+            </Form.Group>
           </Form>
         </div>
       </div>

@@ -1,49 +1,38 @@
-// form {
-//   position: relative;
-//   top: 0%;
-//   left: 50%;
-//   transform: translate(-50%);
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   align-items: center;
-//   padding-top: 40px;
-//   padding-bottom: 40px;
-//   color: black;
-// }
+button {
+  background-color: black;
+  color: white;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+.form-label {
+  text-align: center;
+}
+.form-control {
+  width: 50%;
+}
 
-// textarea {
-//   width: 500px;
-// }
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+}
 
-// textarea {
-//   height: 150px;
-// }
-// h1 {
-//   position: relative;
-//   top: 0%;
-//   left: 50%;
-//   transform: translate(-50%);
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   align-items: center;
-// }
+.form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+}
 
-// button {
-//   background-color: white; /* Green */
-//   border: none;
-//   color: black;
-//   padding: 15px 32px;
-//   margin-top: 10px;
-//   text-align: center;
-//   text-decoration: none;
-//   display: inline-block;
-//   font-size: 16px;
-//   cursor: pointer;
-// }
-// button:hover {
-//   background-color: black;
-//   color: white;
-//   cursor: pointer;
-// }
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-check {
+    padding-left: 10%;
+  }
+
+  .form-control {
+    width: 70%;
+  }
+}
