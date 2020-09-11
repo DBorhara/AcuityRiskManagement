@@ -6,3 +6,37 @@ button:hover {
   background-color: red;
   color: white;
 }
+.form-label {
+  text-align: center;
+}
+.form-control {
+  width: 50%;
+}
+.custom-file {
+  width: 50%;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-check {
+    padding-left: 10%;
+  }
+  .custom-file {
+    width: 70%;
+  }
+  .form-control {
+    width: 70%;
+  }
+}

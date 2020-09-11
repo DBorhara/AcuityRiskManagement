@@ -79,40 +79,50 @@ class MVRReleaseForm extends Component {
         <div>
           <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId="formBasicCompany">
-              <Form.Label>Company Name</Form.Label>
+              <Form.Label>
+                <strong>Company Name</strong>
+              </Form.Label>
               <Form.Control
                 name="company"
                 type="text"
-                placeholder="Please Enter Company Name"
+                placeholder="Company Name"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="formBasicName">
-              <Form.Label>Driver Name</Form.Label>
+              <Form.Label>
+                <strong>Driver Name</strong>
+              </Form.Label>
               <Form.Control
                 name="name"
                 type="text"
-                placeholder="Please Enter Driver Name"
+                placeholder="Driver Name"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="formBasicSSNUm">
-              <Form.Label>Last 4 Digits of Social Security Number</Form.Label>
+              <Form.Label>
+                <strong>Last 4 of SS Number</strong>
+              </Form.Label>
               <Form.Control
                 name="social4"
                 type="password"
-                placeholder="Please Enter The Last 4 of Your Social Security Number"
+                placeholder="Last 4 of SS"
                 onChange={this.handleChange}
               />
             </Form.Group>
-
-            <Form.File
-              id="custom-file"
-              label="Please Upload Your Driver's License Image"
-              custom
-              onChange={this.fileSelectedHandler}
-              ref={(fileInput) => (this.fileInput = fileInput)}
-            />
+            <Form.Group>
+              <Form.Label>
+                <strong>Upload Driver License Image</strong>
+              </Form.Label>
+              <Form.File
+                id="custom-file"
+                label="Click Here"
+                custom
+                onChange={this.fileSelectedHandler}
+                ref={(fileInput) => (this.fileInput = fileInput)}
+              />
+            </Form.Group>
             <br />
             <Form.Group controlId="formBasicCheckbox">
               <Form.Check
@@ -121,9 +131,11 @@ class MVRReleaseForm extends Component {
                 label="I affirm all the data I am submitting is true and accurate"
               />
             </Form.Group>
-            <Button type="submit" className="my-1">
-              Submit
-            </Button>
+            <Form.Group>
+              <Button type="submit" className="my-1">
+                Submit
+              </Button>
+            </Form.Group>
           </Form>
         </div>
       </div>
