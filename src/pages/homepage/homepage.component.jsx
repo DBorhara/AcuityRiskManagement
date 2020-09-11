@@ -39,10 +39,11 @@ const HomePage = () => (
       </div>
       <div className="list-line-content">
         <div className="text-content">
-          Having insurance is not the same thing. Best of brokers may provide
-          streamlined services and good risk management however, they are still
-          aligned with own organizational goals, bad accounts add to deficiency,
-          other parties involved in process may be lacking technical skill.
+          Having insurance is not the same thing. Even the best brokers may
+          provide streamlined services and good risk management, however, they
+          are still aligned with their own organizational goals, bad accounts
+          add to deficiency, and other parties involved in process may be
+          lacking technical skill.
         </div>
       </div>
     </div>
@@ -74,8 +75,8 @@ const HomePage = () => (
       </div>
       <div className="list-line-content">
         <div className="text-content">
-          Knowledge is power and that knowledge belongs in clients hands not big
-          insurance brokers and nnsurance companies
+          Knowledge is power and that knowledge belongs in clients hands, not
+          big insurance brokers and insurance companies
         </div>
       </div>
     </div>

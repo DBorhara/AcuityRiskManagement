@@ -25,7 +25,7 @@ const AboutPage = () => (
     </div>
     <div>
       <div className="about-title">
-        <h2>Who are We?</h2>
+        <h1>Who are We?</h1>
       </div>
       <div className="about-content">
         A team of industry experts to support your risk management and
@@ -42,7 +42,7 @@ const AboutPage = () => (
       </div>
       <br />
       <div className="about-title">
-        <h2>Our Values</h2>
+        <h1>Our Values</h1>
       </div>
       <div>
         <div className="about-title">
