@@ -3,13 +3,14 @@ import './services.styles.scss';
 
 import riskabout1 from '../../assets/img/riskabout1.jpg';
 import process from '../../assets/img/process.png';
-import keytakeaways from '../../assets/img/takeaways.png';
+// import keytakeaways from '../../assets/img/takeaways.png';
 
 const ServicesPage = () => (
   <div>
     <div id="services-titles">
       <h1>Services</h1>
     </div>
+    <br />
     <div id="services-title">
       <h2>What Do We Offer?</h2>
     </div>
@@ -65,15 +66,6 @@ const ServicesPage = () => (
         <li>Protecting the environment</li>
         <li> Defining your insurance needs to save on uncessary premiums</li>
       </ul>
-    </div>
-    <div id="services-title">
-      <h2>When Should You Acquire Risk Management Services?</h2>
-    </div>
-    <div id="services-title">
-      <h2>Key TakeAways</h2>
-    </div>
-    <div className="img-content">
-      <img alt="Key TakeAways" src={keytakeaways} />
     </div>
   </div>
 );

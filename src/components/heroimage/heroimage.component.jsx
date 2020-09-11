@@ -5,10 +5,10 @@ import './heroimage.styles.scss';
 import heroimage from '../../assets/img/heroimage.jpg';
 
 const Hero = () => (
-  <div className="container">
+  <div>
     <img className="hero-image" src={heroimage} alt="Hero" />
     <div className="hero-text">
-    <p>Protect your Livelihood</p>
+      <h3>Protect your Livelihood</h3>
       <div className="hero-buttons">
         <Link to="/services">
           <button className="button" type="button">

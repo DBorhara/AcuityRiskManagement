@@ -9,10 +9,7 @@ const footer = () => (
         Dislcaimer
       </Link>
     </div>
-    <div className="right-container">
-      <p>57 Grand Street</p>
-      <p>Massapequa, NY 11758</p>
-    </div>
+    <div className="right-container">57 Grand Street, Massapequa, NY 11758</div>
   </div>
 );
 

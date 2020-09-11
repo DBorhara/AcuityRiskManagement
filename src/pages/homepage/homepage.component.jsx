@@ -15,41 +15,44 @@ const HomePage = () => (
     <Hero />
     <br />
     <br />
-    <div className="header-title">
-      <h2>
-        Risk Management is more important than ever and when done correctly
-        provides clients with information to properly grow business and mitigate
-        losses.
-      </h2>
+    <div className="homepage-title">
+      Risk Management is more important than ever and when done correctly
+      provides clients with information to properly grow business and mitigate
+      losses.
     </div>
-
-    <div className="list-line-content">
-      <img alt="Risk 1" src={riskimg1} />
-      <div className="text-content">
-        <h3>
+    <div>
+      <div className="img-container">
+        <img alt="Risk 1" src={riskimg1} />
+      </div>
+      <div className="list-line-content">
+        <div className="text-content">
           Your risk program is not at 100% maximum value. The appropriate
           parties are overextended and do not have the resources to properly
           assess and provide risk control.
-        </h3>
+        </div>
       </div>
     </div>
     <br />
-    <div className="list-line-content">
-      <img alt="Risk 2" src={riskimg2} />
-      <div className="text-content">
-        <h3>
+    <div>
+      <div className="img-container">
+        <img alt="Risk 2" src={riskimg2} />
+      </div>
+      <div className="list-line-content">
+        <div className="text-content">
           Having insurance is not the same thing. Best of brokers may provide
           streamlined services and good risk management however, they are still
           aligned with own organizational goals, bad accounts add to deficiency,
           other parties involved in process may be lacking technical skill.
-        </h3>
+        </div>
       </div>
     </div>
     <br />
-    <div className="list-line-content">
-      <img alt="Risk 3" src={riskimg3} />
-      <div className="text-content">
-        <h3>
+    <div>
+      <div className="img-container">
+        <img alt="Risk 3" src={riskimg3} />
+      </div>
+      <div className="list-line-content">
+        <div className="text-content">
           Organizations continuously overestimate their risk program’s
           capabilities:
           <br />
@@ -61,17 +64,19 @@ const HomePage = () => (
               control risk
             </li>
           </ul>
-        </h3>
+        </div>
       </div>
     </div>
     <br />
-    <div className="list-line-content">
-      <img alt="Risk 4" src={riskimg4} />
-      <div className="text-content">
-        <h3>
+    <div>
+      <div className="img-container">
+        <img alt="Risk 4" src={riskimg4} />
+      </div>
+      <div className="list-line-content">
+        <div className="text-content">
           Knowledge is power and that knowledge belongs in clients hands not big
           insurance brokers and nnsurance companies
-        </h3>
+        </div>
       </div>
     </div>
   </div>
