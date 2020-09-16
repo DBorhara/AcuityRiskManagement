@@ -10,7 +10,7 @@ import riskimg4 from '../../assets/img/riskimg4.jpg';
 const HomePage = () => (
   <div>
     <div id="about-titles">
-      <h1>Acquity Risk Services</h1>
+      <h1>Acuity Risk Services</h1>
     </div>
     <Hero />
     <br />

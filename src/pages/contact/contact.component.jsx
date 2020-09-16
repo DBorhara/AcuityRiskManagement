@@ -21,7 +21,7 @@ class ContactPage extends Component {
     emailjs
       .sendForm(
         'gmail',
-        'acquityemailform',
+        'acuityemailform',
         event.target,
         'user_bwLIaWZ7w6oGADJnXoOvJ'
       )

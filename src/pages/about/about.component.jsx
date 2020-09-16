@@ -4,12 +4,12 @@ import './about.styles.scss';
 import missionImg from '../../assets/img/missionimg.png';
 const AboutPage = () => (
   <div>
-  <div id="about-titles">
-  <h1>About Us</h1>
-  </div>
-  <br/>
+    <div id="about-titles">
+      <h1>About Us</h1>
+    </div>
+    <br />
     <div id="about-title">
-      <h2>The Acquity Mission</h2>
+      <h2>The Acuity Mission</h2>
     </div>
     <div className="img-content">
       <img alt="Mission" src={missionImg} />
@@ -18,7 +18,7 @@ const AboutPage = () => (
       <h3>A Modern Consulting Company</h3>
     </div>
     <div className="about-content">
-      Acquity provides a lens of understanding and customization to your
+      Acuity provides a lens of understanding and customization to your
       company's risk needs
       <br />
       <br />
@@ -49,7 +49,7 @@ const AboutPage = () => (
           <h3>Innovation</h3>
         </div>
         <div className="about-content">
-          Acquity Risk has a proprietary process to accurately address risk and
+          Acuity Risk has a proprietary process to accurately address risk and
           deficiencies, to transform risk attitude to positive and proactive
           results
         </div>
@@ -71,7 +71,7 @@ const AboutPage = () => (
         </div>
 
         <div className="about-content">
-          Acquity tailors each solution for the business size it is and the
+          Acuity tailors each solution for the business size it is and the
           industry it's in.
         </div>
       </div>
