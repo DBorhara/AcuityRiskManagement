@@ -18,6 +18,7 @@
   align-items: center;
   color: black;
 }
+h1,
 h2,
 h3 {
   text-align: center;
@@ -53,5 +54,7 @@ strong {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
+  h1 {
+    font-size: 9vw;
+  }
 }

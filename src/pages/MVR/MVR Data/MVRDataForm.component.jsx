@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import './MVR.styles.scss';
-import axios from 'axios';
+import { Link } from 'react-router-dom';
+import './MVRDataForm.styles.scss';
 
-class MVRReleaseForm extends Component {
+class MVRDataForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,65 +11,23 @@ class MVRReleaseForm extends Component {
       company: '',
       social4: '',
       selectedFile: null,
-      confirmed: false,
     };
   }
+
+  isFormValid = () => {
+    const { name, company, social4, selectedFile } = this.state;
+
+    return name && company && social4 && selectedFile;
+  };
 
   fileSelectedHandler = (event) => {
     this.setState({ selectedFile: event.target.files[0] });
   };
 
   handleChange = (event) => {
-    this.setState({ name: event.target.value });
+    this.setState({ [event.target.name]: event.target.value });
   };
 
-  handleConfirm = (event) => {
-    if (event.target.value === false) {
-      this.setState({ confirmed: true });
-    }
-    if (event.target.value === true) {
-      this.setState({ confirmed: false });
-    }
-  };
-
-  handleSubmit = async (event) => {
-    if (this.state.confirmed) {
-      try {
-        const fd = new FormData();
-        fd.append(
-          'image',
-          this.state.selectedFile,
-          this.state.selectedFile.name,
-          {
-            onUploadProgress: (progressEvent) => {
-              console.log(
-                'Upload Progress:' +
-                  Math.round(
-                    (progressEvent.loaded / progressEvent.total) * 100
-                  ) +
-                  '%'
-              );
-            },
-          }
-        );
-        //NEED ENDPOINTS
-        const response = await axios.post('', fd);
-        console.log(response);
-
-        const user = {
-          name: this.state.name,
-          company: this.state.company,
-          social4: this.state.social4,
-        };
-        const response2 = axios.post('', { user });
-        console.log('response2', response2);
-      } catch (error) {
-        console.error(error);
-      }
-    } else {
-      window.alert('Please check the I Affirm Box to continue');
-    }
-  };
   render() {
     return (
       <div>
@@ -124,17 +82,19 @@ class MVRReleaseForm extends Component {
               />
             </Form.Group>
             <br />
-            <Form.Group controlId="formBasicCheckbox">
-              <Form.Check
-                onClick={this.handleConfirm}
-                type="checkbox"
-                label="I affirm all the data I am submitting is true and accurate"
-              />
-            </Form.Group>
             <Form.Group>
-              <Button type="submit" className="my-1">
-                Submit
-              </Button>
+              {this.isFormValid() ? (
+                <Link
+                  to={{
+                    pathname: '/MVRSubmissionConfirm',
+                    state: this.state,
+                  }}
+                >
+                  <Button type="submit" className="my-1">
+                    Continue
+                  </Button>
+                </Link>
+              ) : null}
             </Form.Group>
           </Form>
         </div>
@@ -143,14 +103,4 @@ class MVRReleaseForm extends Component {
   }
 }
 
-export default MVRReleaseForm;
-
-// <div>
-//           <input
-//             style={{ display: 'none' }}
-//             type="file"
-//             onChange={this.fileSelectedHandler}
-//             ref={(fileInput) => (this.fileInput = fileInput)}
-//           />
-//           <button onClick={() => this.fileInput.click()}>Attach MVR</button>
-//         </div>
+export default MVRDataForm;

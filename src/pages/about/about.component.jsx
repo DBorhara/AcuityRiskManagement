@@ -9,7 +9,7 @@ const AboutPage = () => (
     </div>
     <br />
     <div id="about-title">
-      <h2>The Acuity Mission</h2>
+      <h1>The Acuity Mission</h1>
     </div>
     <div className="img-content">
       <img alt="Mission" src={missionImg} />
@@ -38,7 +38,8 @@ const AboutPage = () => (
           <li>Peace of Mind</li>
         </ul>
         Acuity believes in rising by lifting our people, businesses, and
-        community
+        community. As a veteran and minority owned business we bring our unique
+        experiences to better serve your needs
       </div>
       <br />
       <div className="about-title">

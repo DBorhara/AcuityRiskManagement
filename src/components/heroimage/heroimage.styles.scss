@@ -1,7 +1,7 @@
 /* The hero image */
 .hero-image {
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -19,7 +19,7 @@
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 20%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -18%);
   color: black;
@@ -60,7 +60,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .hero-image {
     max-width: 100%;
-
+    height: auto;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -69,14 +69,14 @@
     // padding-top: 25px;
   }
   .hero-text {
-    text-align: center;
+    // text-align: center;
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -18%);
-    color: white;
+    color: black;
     text-shadow: 4px 4px 8px rgba(150, 150, 150, 0.57);
-    h1 {
+    h3 {
       font-size: 4vw;
     }
     p {

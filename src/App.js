@@ -12,7 +12,8 @@ import ServicesPage from './pages/services/services.component';
 import AboutPage from './pages/about/about.component';
 import ContactPage from './pages/contact/contact.component';
 import DisclaimerPage from './pages/disclaimer/disclaimer.component';
-import MVRSubmission from './pages/MVR/MVR.component';
+import MVRDataForm from './pages/MVR/MVR Data/MVRDataForm.component';
+import MVRSubmission from './pages/MVR/MVR Submit Confirmation/MVRSubmitConfirm.jsx';
 
 class App extends Component {
   render() {
@@ -26,7 +27,8 @@ class App extends Component {
             <Route path="/about" component={AboutPage} />
             <Route path="/contact" component={ContactPage} />
             <Route path="/disclaimer" component={DisclaimerPage} />
-            <Route path="/MVRSubmission" component={MVRSubmission} />
+            <Route path="/MVRSubmission" component={MVRDataForm} />
+            <Route path="/MVRSubmissionConfirm" component={MVRSubmission} />
           </Switch>
         </div>
         <Footer />

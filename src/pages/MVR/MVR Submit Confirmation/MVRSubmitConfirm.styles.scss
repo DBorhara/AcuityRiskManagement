@@ -1,0 +1,31 @@
+.title-confirm-text {
+  color: black;
+  text-align: center;
+  font-size: 4vw;
+  padding-top: 1vh;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+.confirm-text {
+  padding: 5% 25% 5% 25%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .title-confirm-text {
+    color: black;
+    text-align: center;
+    font-size: 4vh;
+    padding-top: 1vh;
+  }
+  .confirm-text {
+    padding: 5% 10% 5% 10%;
+  }
+}

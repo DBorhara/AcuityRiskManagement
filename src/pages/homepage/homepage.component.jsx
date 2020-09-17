@@ -10,7 +10,7 @@ import riskimg4 from '../../assets/img/riskimg4.jpg';
 const HomePage = () => (
   <div>
     <div id="about-titles">
-      <h1>Acuity Risk Services</h1>
+      <h1>Acuity Risk Consultants</h1>
     </div>
     <Hero />
     <br />
@@ -20,7 +20,7 @@ const HomePage = () => (
       provides clients with information to properly grow business and mitigate
       losses.
     </div>
-    <div>
+    <div className="container">
       <div className="img-container">
         <img alt="Risk 1" src={riskimg1} />
       </div>
@@ -33,7 +33,7 @@ const HomePage = () => (
       </div>
     </div>
     <br />
-    <div>
+    <div className="container">
       <div className="img-container">
         <img alt="Risk 2" src={riskimg2} />
       </div>
@@ -48,7 +48,7 @@ const HomePage = () => (
       </div>
     </div>
     <br />
-    <div>
+    <div className="container">
       <div className="img-container">
         <img alt="Risk 3" src={riskimg3} />
       </div>
@@ -69,7 +69,7 @@ const HomePage = () => (
       </div>
     </div>
     <br />
-    <div>
+    <div className="container">
       <div className="img-container">
         <img alt="Risk 4" src={riskimg4} />
       </div>
