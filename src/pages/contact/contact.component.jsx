@@ -5,7 +5,7 @@ import { Form, Button } from 'react-bootstrap';
 
 import './contact.styles.scss';
 
-import Hero from '../../components/heroimage/heroimage.component';
+import Hero from '../../components/Hero_Image/heroimage.component';
 
 class ContactPage extends Component {
   state = {
@@ -30,7 +30,7 @@ class ContactPage extends Component {
           console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          console.error(error.text);
         }
       );
     this.resetForm();

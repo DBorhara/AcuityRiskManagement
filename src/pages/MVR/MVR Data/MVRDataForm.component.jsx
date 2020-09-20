@@ -75,7 +75,7 @@ class MVRDataForm extends Component {
               </Form.Label>
               <Form.File
                 id="custom-file"
-                label="Click Here"
+                label="Click here to Upload"
                 custom
                 onChange={this.fileSelectedHandler}
                 ref={(fileInput) => (this.fileInput = fileInput)}

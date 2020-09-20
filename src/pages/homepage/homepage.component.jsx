@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.styles.scss';
 
-import Hero from '../../components/heroimage/heroimage.component';
+import Hero from '../../components/Hero_Image/heroimage.component';
 import riskimg1 from '../../assets/img/riskimg1.jpg';
 import riskimg2 from '../../assets/img/riskimg2.jpg';
 import riskimg3 from '../../assets/img/riskimg3.jpg';
