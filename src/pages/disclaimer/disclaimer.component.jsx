@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './disclaimer.styles.scss';
 
 const DisclaimerPage = () => (

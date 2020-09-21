@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  // padding-top: 25px;
 }
 
 /* Place text in the middle of the image */
@@ -41,14 +40,6 @@
   button {
     margin-top: 100px;
 
-    // display: flex;
-    // // align-items: center;
-    // // justify-content: center
-    // border: none;
-    // background-color: white;
-    // color: black;
-    // text-decoration: none;
-    // transition-duration: 0.4s;
     button:hover {
       background-color: black;
       color: white;
@@ -66,7 +57,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    // padding-top: 25px;
   }
   .hero-text {
     text-align: center;
@@ -84,7 +74,6 @@
     }
   }
   .hero-buttons {
-    // display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -93,14 +82,6 @@
     button {
       margin: 4vh;
 
-      // display: flex;
-      // // align-items: center;
-      // // justify-content: center
-      // border: none;
-      // background-color: white;
-      // color: black;
-      // text-decoration: none;
-      // transition-duration: 0.4s;
       button:hover {
         background-color: black;
         color: white;

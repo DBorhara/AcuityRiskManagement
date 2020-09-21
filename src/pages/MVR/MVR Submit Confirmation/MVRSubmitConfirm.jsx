@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { storage, db } from '../../../components/Firebase';
 import firebase from 'firebase/app';
+
 import './MVRSubmitConfirm.styles.scss';
 
 class MVRSubmitConfirm extends Component {
@@ -37,7 +38,7 @@ class MVRSubmitConfirm extends Component {
           async (snapshot) => {
             // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
             // DEBUG PURPOSES
-            // var progress =
+            // let progress =
             //   (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
             // console.log('Upload is ' + progress + '% done');
             // switch (snapshot.state) {

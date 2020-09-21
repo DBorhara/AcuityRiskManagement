@@ -1,7 +1,9 @@
 import React from 'react';
+
 import './about.styles.scss';
 
 import missionImg from '../../assets/img/missionimg.png';
+
 const AboutPage = () => (
   <div>
     <div id="about-titles">

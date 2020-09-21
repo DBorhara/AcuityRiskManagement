@@ -1,9 +1,9 @@
 import React from 'react';
 import './services.styles.scss';
 
+//Images
 import riskabout1 from '../../assets/img/riskabout1.jpg';
 import process from '../../assets/img/process.png';
-// import keytakeaways from '../../assets/img/takeaways.png';
 
 const ServicesPage = () => (
   <div>
