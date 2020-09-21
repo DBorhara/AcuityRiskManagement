@@ -14,6 +14,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+//Firebase Tools
 const storage = firebase.storage();
 const db = firebase.database();
 
