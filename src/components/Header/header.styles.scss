@@ -1,0 +1,46 @@
+.color-nav {
+  background-color: #0f52ba;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-brand {
+  padding: 0 !important;
+}
+
+.nav-text {
+  color: white !important;
+  text-decoration: none;
+}
+.nav-text:hover {
+  color: yellow !important;
+}
+
+.active {
+  color: blue !important;
+  text-decoration: none;
+}
+
+#nav-dropdown {
+  color: white;
+}
+
+img {
+  width: 10vw;
+  height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .color-nav {
+    display: flex;
+    background-color: #0f52ba;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .navbar-brand {
+    padding: 0 !important;
+  }
+  img {
+    width: 12vw;
+  }
+}
