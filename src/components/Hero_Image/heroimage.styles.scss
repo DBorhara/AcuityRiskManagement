@@ -51,6 +51,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .hero-image {
     max-width: 100%;
+    height: auto;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -64,7 +65,7 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -18%);
-    color: black;
+    color: white;
     text-shadow: 4px 4px 8px rgba(150, 150, 150, 0.57);
     h1 {
       font-size: 4vw;
@@ -74,18 +75,21 @@
     }
   }
   .hero-buttons {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 32px;
     font-size: 16px;
     button {
-      margin: 4vh;
+      margin: 1vh;
 
       button:hover {
         background-color: black;
         color: white;
         cursor: pointer;
+      }
+      button:active {
+        position: relative;
       }
     }
   }
