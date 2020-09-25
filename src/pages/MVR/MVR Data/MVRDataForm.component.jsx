@@ -5,15 +5,12 @@ import { Link } from 'react-router-dom';
 import './MVRDataForm.styles.scss';
 
 class MVRDataForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      company: '',
-      social4: '',
-      selectedFile: null,
-    };
-  }
+  state = {
+    name: '',
+    company: '',
+    social4: '',
+    selectedFile: null,
+  };
 
   isFormValid = () => {
     const { name, company, social4, selectedFile } = this.state;

@@ -3,13 +3,16 @@
 }
 .form-control {
   width: 50%;
+  margin: 0 25%;
+  // display: flex;
 }
 .custom-file {
   width: 50%;
+  margin: 0 25%;
 }
 .form-group {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   flex-flow: column wrap;
 }
@@ -24,10 +27,11 @@ button:hover {
 }
 
 .form {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-flow: column wrap;
+  // display: flex;
+  // justify-content: center;
+  // align-content: center;
+  // flex-flow: column wrap;
+  text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
